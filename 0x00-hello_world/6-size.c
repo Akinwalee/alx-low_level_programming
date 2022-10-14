@@ -2,10 +2,11 @@
 /**
  * prints type sizes
  *
- * returns 0
+ * Returns: Always 0 (Success)
  */
 
- int main(void){
+ int main(void)
+{
  	char myCharacter;
 	int integer;
 	long int longInt;
