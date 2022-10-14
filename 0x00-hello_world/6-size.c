@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+ * prints type sizes
+ *
+ * returns 0
+ */
+
  int main(void){
  	char myCharacter;
 	int integer;
