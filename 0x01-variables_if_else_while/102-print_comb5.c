@@ -10,20 +10,20 @@ int main(void)
 {
 	int a, b, c, d;
 
-	for (a = 0; a <97; a++)
+	for (a = 0; a < 10; a++)
 	{
-		for (b = a + 1; b < 98; b++)
+		for (b = a; b < 10; b++)
 		{
-			for (c = b + 1; c < 99; c++)
+			for (c = b; c < 10; c++)
 			{
-				for (d = c +1; d <100; d++)
+				for (d = c; d < 10; d++)
 				{
 					putchar((a % 10) + '0');
 					putchar((b % 10) + '0');
 					putchar(' ');
 					putchar((c % 10) + '0');
 					putchar((d % 10) + '0');
-					if (a == 96 && b == 97 && c == 98 && d == 99)
+					if (a == 9 && b == 9 && c == 9 && d == 9)
 						continue;
 		
 					putchar(',');
