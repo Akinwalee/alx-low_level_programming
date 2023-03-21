@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
  */
 
-int _isalphat(int c)
+int _isalpha(int c)
 {
 	if ((c >= 65 && c <= 91) || (c >= 'a' && c<= 'z'))
 		return (1);
