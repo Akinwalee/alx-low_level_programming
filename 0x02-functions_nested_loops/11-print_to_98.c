@@ -1,10 +1,9 @@
 #include "main.h"
-#include "6-abs.c"
 
 /**
 * print_to_98 - Prints number to 98
 *
-* @n: Variable for strating number
+* @n: Variable for starting number
 * 
 * Return: Always 0 (Success)
 */
