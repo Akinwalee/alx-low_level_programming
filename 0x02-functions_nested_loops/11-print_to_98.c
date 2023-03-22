@@ -4,7 +4,7 @@
 * print_to_98 - Prints number to 98
 *
 * @n: Variable for starting number
-* 
+*
 * Return: Always 0 (Success)
 */
 
