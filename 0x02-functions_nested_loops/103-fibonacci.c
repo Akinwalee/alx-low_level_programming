@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
- * main - main function
+ * main - Prints the first 4000000 Fibonacci sequence
  *
- * Return: nothing
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int counter = 0;
