@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
- * main - main function
+ * main - Prints the fibonacci sequence
  *
- * Return: nothing
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int counter = 2;
