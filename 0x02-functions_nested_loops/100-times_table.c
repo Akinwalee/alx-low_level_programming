@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * print_times_table - times table function
- * @n: integer to return
+ * print_times_table - Prints n by n times table
+ *
+ * @n: Variable for the time table to compute integer
  *
  * Return: Always 0 (Success)
  */
+
 void print_times_table(int n)
 {
 	int i;
