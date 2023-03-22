@@ -4,6 +4,7 @@
 /**
  * print_last_digit - Prints the last digit of a number
  *
+ * @x: Variable for number whose last digit is to be printed
  * Return: Always 0 (Success)
  */
 
