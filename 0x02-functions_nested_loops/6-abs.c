@@ -3,6 +3,8 @@
 /**
  * _abs - Prints the absolute value of its argument
  *
+ * @x: Variable for number whose absolute value is to printed
+ *
  * Return: Always 0 (Success)
  */
 
@@ -15,7 +17,7 @@ int _abs(int x)
 	else if (x < 0)
 	{
 		x *= -1;
-		return(x);
+		return (x);
 	}
 
 	return (0);
