@@ -2,21 +2,22 @@
 
 /**
  * print_square - Prints a squareusing the character #.
- * @size: The size of the square.
+ * 
+ *@size: The size of the square.
  */
 
 void print_square(int size)
 {
-	int hgt, wid;
+	int i, j;
 
 	if (size > 0)
 	{
-		for (hgt = 0; hgt < size; hgt++)
+		for (i = 0; i < size; i++)
 		{
-			for (wid = 0; wid < size; wid++)
+			for (j = 0; j < size; j++)
 				_putchar('#');
 
-			if (hgt == size - 1)
+			if (i == size - 1)
 				continue;
 			_putchar('\n');
 		}
