@@ -11,12 +11,5 @@
 
 void print_rev(char *s)
 {
-	int length = strlen(s);
-	char new_string[length];
-
-	for (int i = lenght - 1; i >= 0; i--)
-	{
-		new_string = s[i];
-	}
-	puts(new_string);
+	puts(strrev(s));
 }
