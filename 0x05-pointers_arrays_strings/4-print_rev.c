@@ -12,9 +12,9 @@
 void print_rev(char *s)
 {
 	int length = strlen(s);
-	char new_string[];
+	char new_string[length];
 
-	for (i = lenght - 1; i >= 0; i--)
+	for (int i = lenght - 1; i >= 0; i--)
 	{
 		new_string = s[i];
 	}
