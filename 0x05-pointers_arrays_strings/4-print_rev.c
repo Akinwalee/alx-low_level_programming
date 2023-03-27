@@ -13,6 +13,8 @@ void print_rev(char *s)
 {
 	int reverse, length, i;
 
+	length = strlen(s);
+
 	for (i = 0; i <= length - 1; i++)
 	{
 		rev = s[i];
