@@ -22,5 +22,5 @@ void print_rev(char *s)
 		s[length - 1 - i] = rev;
 	}
 
-	puts(s);
+	printf("%s\n", s);
 }
