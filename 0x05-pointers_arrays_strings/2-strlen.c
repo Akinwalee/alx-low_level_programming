@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
  */
 
-int _strlen(char *c)
+int _strlen(char *s)
 {
-	strlen(*c);
+	strlen(*s);
 }
