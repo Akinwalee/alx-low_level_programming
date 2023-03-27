@@ -11,7 +11,7 @@
 
 void print_rev(char *s)
 {
-	int reverse, length, i;
+	int rev, length, i;
 
 	length = strlen(s);
 
