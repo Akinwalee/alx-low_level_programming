@@ -11,7 +11,14 @@
 
 void print_rev(char *s)
 {
-	char reverse[] = strrev(s);
+	int reverse, length, i;
 
-	puts(reverse);
+	for (i = 0; i <= length - 1; i++)
+	{
+		rev = s[i];
+		s[i] = s[length - 1 - i];
+		s[length - 1 - i] = rev;
+	}
+
+	puts(s);
 }
