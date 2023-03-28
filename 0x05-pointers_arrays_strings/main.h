@@ -17,3 +17,5 @@ void print_array();
 char *_strcpy();
 
 int _putchar();
+
+int _atoi();
