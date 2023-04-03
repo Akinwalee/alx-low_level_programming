@@ -9,10 +9,10 @@
  * Return: void.
  */
 
-void reverse_array(char *a, int n)
+void reverse_array(i *a, int n)
 {
 	int i, j;
-	char temp[n];
+	int temp[n];
 
 	for (i = n - 1; i >= 0; i--)
 		temp[n - 1 - i] = a[i];
