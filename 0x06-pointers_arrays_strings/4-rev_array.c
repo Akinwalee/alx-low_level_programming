@@ -9,7 +9,7 @@
  * Return: void.
  */
 
-void reverse_array(i *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i, j;
 	int temp[n];
