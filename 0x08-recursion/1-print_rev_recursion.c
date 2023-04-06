@@ -25,9 +25,7 @@ void helper(char *s, int i, int j)
 void _print_rev_recursion(char *s)
 {
 	int len = strlen(s);
-	char str[];
 
-	strcpy(str, s);
-	helper(str, 0, len - 1);
-	printf("%s", str);
+	helper(s, 0, len - 1);
+	printf("%s", s);
 }
