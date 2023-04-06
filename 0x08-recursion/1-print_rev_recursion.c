@@ -8,19 +8,19 @@
  * Return: Void.
  */
 
-void _print_rev_recursion(char *s)
+void helper(char *s, int i, int j)
 {
-	int len = 0;
-	int i = 0;
 	char temp;
 
-	while (s[i++])
-		len++;
+	temp = s[i];
+	s[i] = s[j];
+	s[j] = temp;
+	helper(s, i + 1, j - 1);
+}
 
-	for (i = len - 1; i >= len / 2; i--)
-	{
-		temp = s[i];
-		s[i] = s[len - 1 - i];
-		s[len - 1 - i] = temp;
-	}
+void _print_rev_recursion(char *s)
+{
+	int len = strlen(s);
+	helper(s, 0, len - 1);
+	printf("%s", s);
 }
