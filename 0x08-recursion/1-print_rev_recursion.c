@@ -1,9 +1,13 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - Prints a string in reverse
+ * _print_rev_recursion - Prints a string in reverse.
+ *
+ * helper - Helper function for the main recursion.
  *
  * @s: The string to reverse.
+ * @i: String index variable.
+ * @j: String end index variable.
  *
  * Return: Void.
  */
@@ -21,6 +25,9 @@ void helper(char *s, int i, int j)
 void _print_rev_recursion(char *s)
 {
 	int len = strlen(s);
-	helper(s, 0, len - 1);
-	printf("%s", s);
+	char str[len];
+
+	strcpy(str, s);
+	helper(str, 0, len - 1);
+	printf("%s", str);
 }
