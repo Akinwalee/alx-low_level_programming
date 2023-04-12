@@ -4,13 +4,14 @@
  * main - Return the number of argumnets
  *
  * @argc: Argc
+ * @argv: Argv
  *
  * Return: Always 0 (Success)
  */
 
-int main(int argc)
+int main(int argc, char __attribute((__unused__)) *argv[])
 {
-	printf("%i", argc);
+	printf("%d\n", argc);
 
 	return (0);
 }
