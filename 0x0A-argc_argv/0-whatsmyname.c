@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * whatsmyname - Prints the name of the function
@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-:x
+
 void whatsmyname(int argc, char **argv)
 {
 	printf("%s", argv[0]);
