@@ -2,4 +2,4 @@
 
 int _putchar();
 
-void whatsmyname();
+void myname();

@@ -10,5 +10,5 @@
 
 void myname(int argc, char *argv[])
 {
-	printf("%s", argv[0]);
+	printf("%s\n", argv[0]);
 }
