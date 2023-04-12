@@ -8,7 +8,7 @@
  * Return: void
  */
 
-void myname(int argc, char *argv[])
+void myname(int __attribute__ ((unused)) argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
 }
