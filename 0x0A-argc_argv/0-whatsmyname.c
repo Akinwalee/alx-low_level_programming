@@ -1,14 +1,16 @@
-#include "main.h"
+#include "stdio.h"
 
 /**
  * myname - Prints the name of the function
  *
  * @argc: argc
  *
- * Return: void
+ * Return:Always 0 (Success)
  */
 
-void myname(int __attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
+
+	return (0);
 }
