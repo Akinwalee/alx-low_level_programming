@@ -1,13 +1,16 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * arguments - Return the number of argumnets
+ * main - Return the number of argumnets
  *
  * @argc: Argc
- * Return: void
+ *
+ * Return: Always 0 (Success)
  */
 
-void arguments(int argc)
+int main(int argc)
 {
 	printf("%i", argc);
+
+	return (0);
 }

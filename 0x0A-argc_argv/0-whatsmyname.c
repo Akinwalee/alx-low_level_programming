@@ -1,9 +1,10 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
- * myname - Prints the name of the function
+ * main - Prints the name of the function
  *
  * @argc: argc
+ * @argv: argv
  *
  * Return:Always 0 (Success)
  */
