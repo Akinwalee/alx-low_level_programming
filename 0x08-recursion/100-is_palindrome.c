@@ -12,7 +12,7 @@
 
 int helper(char *s, int i, int length)
 {
-	if (*(s + i) != *(s + len - 1))
+	if (*(s + i) != *(s + length - 1))
 		return (0);
 	if (i >= length)
 		return (1);
@@ -29,7 +29,7 @@ int helper(char *s, int i, int length)
 
 int is_palindrome(char *s)
 {
-	if (*s == NULL)
+	if (*s == '\0')
 		return (0);
 	return (helper(s, 0, _strlen_recursion(s)));
 }
