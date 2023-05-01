@@ -31,7 +31,8 @@ int check_num(const char *str)
 int main(int argc, char *argv[])
 {
     int sum = 0;
-    for (int i = 1; i < argc; i++)
+    int i;
+    for (i = 1; i < argc; i++)
     {
         if (check_num(argv[i]))
             sum += atoi(argv[i]);
