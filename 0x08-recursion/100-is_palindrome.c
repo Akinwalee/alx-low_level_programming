@@ -10,7 +10,7 @@
  * Return: Return 1 or 0 if palidrome or otherwise.
  */
 
-int helper(cahr *s, int i, int length)
+int helper(char *s, int i, int length)
 {
 	if (*(s + i) != *(s + len - 1))
 		return (0);
@@ -27,7 +27,7 @@ int helper(cahr *s, int i, int length)
  * Return: Returns 1 if it is palindrome, 0 otherwise.
  */
 
-int is_palindrome(cahr *s)
+int is_palindrome(char *s)
 {
 	if (*s == NULL)
 		return (0);
