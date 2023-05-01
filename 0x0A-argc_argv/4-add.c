@@ -8,15 +8,16 @@
  *
  * Return: 1 if the string contains only digits, 0 otherwise
  */
+
 int check_num(const char *str)
 {
     while (*str)
     {
         if (!isdigit(*str))
-            return 0;
+            return (0);
         str++;
     }
-    return 1;
+    return (1);
 }
 
 /**
@@ -32,6 +33,7 @@ int main(int argc, char *argv[])
 {
     int sum = 0;
     int i;
+
     for (i = 1; i < argc; i++)
     {
         if (check_num(argv[i]))
@@ -39,9 +41,9 @@ int main(int argc, char *argv[])
         else
         {
             printf("Error\n");
-            return 1;
+            return (1);
         }
     }
     printf("%d\n", sum);
-    return 0;
+    return (0);
 }
