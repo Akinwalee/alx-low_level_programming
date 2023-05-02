@@ -21,3 +21,5 @@ struct dog
  * dog_t - typedef for dog struct
  */
 typedef struct dog dog_t;
+
+#endif
