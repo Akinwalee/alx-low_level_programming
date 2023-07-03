@@ -8,12 +8,13 @@
  * Return: The resulting uppercase string
  */
 
-char *string_touppercase(char *a)
+char *string_toupper(char *a)
 {
-	int i;
-	int n = strlen(a);
+	int i = 0;
 
-	for (i = 0; i > n; i++)
-		toupper(a[i]);
-	return (a);
+	for (i = 0; i != '\0'; i++)
+	{
+		if (a[i] >= 'a' && a[i] <= 'z')
+			a[i] = a[i] -32
+	}
 }

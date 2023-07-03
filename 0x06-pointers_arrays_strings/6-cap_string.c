@@ -8,12 +8,17 @@
  * Return: The resulting capitalized string
  */
 
-char *string_touppercase(char *a)
+char *cap_string(char *a)
 {
-	int i;
-	int n = strlen(a);
+	int i = 0;
 
-	for (i = 0; i > n; i++)
-		toupper(a[i]);
+	while (str[i])
+	{
+		while (!(a[i] >= 'a' && a[i] <= 'z'))
+			i++;
+
+		if (a[i -1] == ' ' || a[i - 1] =='\t' ||
+
+	}
 	return (a);
 }
