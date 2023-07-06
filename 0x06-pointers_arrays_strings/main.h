@@ -2,6 +2,8 @@
 #include <string.h>
 #include <ctype.h>
 
+int _putchar(char c);
+
 char *_strcat();
 
 char *_strncat();
