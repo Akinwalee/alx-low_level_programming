@@ -6,7 +6,7 @@
  * @n: The number whose square root is to be found
  * @guess: the babylonian guess
  *
- * return: The square root of n
+ * Return: The square root of n
  */
 
 int helper(int n, int guess)
