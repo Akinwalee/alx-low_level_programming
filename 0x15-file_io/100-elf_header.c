@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <elf.h> // ELF header definitions
+#include <elf.h>
 #include <sys/types.h>
 
 #define BUF_SIZE 128
@@ -13,8 +13,10 @@ void error_exit(int code, const char *message) {
 }
 
 void display_elf_header_info(Elf64_Ehdr *elf_header) {
+    int i;
+
     printf("Magic: ");
-    for (int i = 0; i < EI_NIDENT; i++) {
+    for (i = 0; i < EI_NIDENT; i++) {
         printf("%02x", elf_header->e_ident[i]);
         if (i < EI_NIDENT - 1) {
             printf(" ");
@@ -93,6 +95,7 @@ int main(int argc, char *argv[]) {
     const char *elf_filename;
     ssize_t bytes_read;
     int fd;
+    Elf64_Ehdr elf_header;
 
     if (argc != 2) {
         error_exit(98, "Usage: elf_header elf_filename");
@@ -105,7 +108,6 @@ int main(int argc, char *argv[]) {
         error_exit(98, "Error: Can't open ELF file");
     }
 
-    Elf64_Ehdr elf_header;
     bytes_read = read(fd, &elf_header, sizeof(Elf64_Ehdr));
     if (bytes_read != sizeof(Elf64_Ehdr) || elf_header.e_ident[EI_MAG0] != ELFMAG0 || elf_header.e_ident[EI_MAG1] != ELFMAG1 ||
         elf_header.e_ident[EI_MAG2] != ELFMAG2 || elf_header.e_ident[EI_MAG3] != ELFMAG3) {
