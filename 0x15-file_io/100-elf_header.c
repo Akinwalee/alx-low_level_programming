@@ -89,19 +89,24 @@ void display_elf_header_info(Elf64_Ehdr *elf_header) {
 }
 
 int main(int argc, char *argv[]) {
+
+    const char *elf_filename;
+    ssize_t bytes_read;
+    int fd;
+
     if (argc != 2) {
         error_exit(98, "Usage: elf_header elf_filename");
     }
 
-    const char *elf_filename = argv[1];
+    elf_filename = argv[1];
 
-    int fd = open(elf_filename, O_RDONLY);
+    fd = open(elf_filename, O_RDONLY);
     if (fd == -1) {
         error_exit(98, "Error: Can't open ELF file");
     }
 
     Elf64_Ehdr elf_header;
-    ssize_t bytes_read = read(fd, &elf_header, sizeof(Elf64_Ehdr));
+    bytes_read = read(fd, &elf_header, sizeof(Elf64_Ehdr));
     if (bytes_read != sizeof(Elf64_Ehdr) || elf_header.e_ident[EI_MAG0] != ELFMAG0 || elf_header.e_ident[EI_MAG1] != ELFMAG1 ||
         elf_header.e_ident[EI_MAG2] != ELFMAG2 || elf_header.e_ident[EI_MAG3] != ELFMAG3) {
         error_exit(98, "Error: Not an ELF file");
