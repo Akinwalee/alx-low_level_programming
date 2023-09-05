@@ -20,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	file = open(filename, O_WRONLY | O_APPEND);
 
-		if (filename == NULL || text_content == NULL || file == 0)
+		if (filename == NULL || text_content == NULL || file == -1)
 			return (-1);
 
 	written = write(file, text_content, strlen(text_content));
