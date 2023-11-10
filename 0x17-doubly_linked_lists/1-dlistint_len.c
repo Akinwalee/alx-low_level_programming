@@ -14,7 +14,7 @@ size_t dlistint_len(const dlistint_t *head)
 
 	if (head == NULL)
 	{
-		return (1);
+		return (EXIT_FAILURE);
 	}
 
 	while (head)
