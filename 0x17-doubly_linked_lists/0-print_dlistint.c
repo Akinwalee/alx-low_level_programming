@@ -3,28 +3,25 @@
 /**
  * print_dlistint - Prints all the elements of a doubly linked list
  *
- * @h: The head pointer of the doubly linked list to print.
+ * @head: The head pointer of the doubly linked list to print.
  *
  * Return: The number of nodes in the doubly linked list.
  */
 
-size_t print_dlistint(const dlistint_t *h)
+size_t print_dlistint(const dlistint_t *head)
 {
 	int count = 0;
 
 	if (head == NULL)
 	{
-		return (1)
+		return (1);
 	}
-	
-	dlistint_t *ptr = NULL;
-	ptr = head;
 
-	while (ptr != NULL)
+	while (head)
 	{
 		count++;
-		printf("%d\n", ptr->n);
-		ptr = prt->next;
+		printf("%d\n", head->n);
+		head = head->next;
 	}
 
 	return (count);
