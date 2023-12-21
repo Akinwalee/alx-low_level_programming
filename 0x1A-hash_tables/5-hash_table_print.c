@@ -10,7 +10,7 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-	int i = 0;
+	long unsigned int i = 0;
 	hash_node_t *current = NULL;
 	int flag = 0;
 
