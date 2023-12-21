@@ -29,7 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht->array[index] != NULL)
 	{
 		current = ht->array[index];
-		while (current)
+		while (current->next)
 			current = current->next;
 
 		current->next = node;
