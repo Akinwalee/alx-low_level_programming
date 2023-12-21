@@ -25,10 +25,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	node->key = strdup(key);
 	node->value = strdup(value);
+	node->next = NULL;
 
 	if (ht->array[index] != NULL)
 	{
 		current = ht->array[index];
+		
 		if (strcmp(current->key, key) == 0)
 		{
 			free(current->value);
@@ -38,10 +40,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			current->value = strdup(value);
 			return (1);
 		}
-		while (current->next)
-			current = current->next;
-
-		current->next = node;
+		
+		node->next = current;
+		ht->array[index] = node;
 		return (1);
 	}
 	else
