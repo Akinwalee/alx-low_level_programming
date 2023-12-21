@@ -22,5 +22,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 
 	current = ht->array[index];
+	while (current->next)
+	{
+		if (strcmp(current->key, key) == 0)
+			return (current->value);
+		
+		current = current->next;
+	}
 	return (current->value);
 }
