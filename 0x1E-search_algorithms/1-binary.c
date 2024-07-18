@@ -21,7 +21,7 @@ void print_arr(int *array, size_t start, size_t end)
 			printf(", ");
 		printf("%d", array[i]);
 	}
-	printf("\n")
+	printf("\n");
 }
 
 /**
@@ -37,7 +37,7 @@ void print_arr(int *array, size_t start, size_t end)
 
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i, mid = 0;
+	size_t mid = 0;
 	size_t start = 0;
 	size_t end = size - 1;
 
@@ -46,7 +46,7 @@ int binary_search(int *array, size_t size, int value)
 
 	while (start <= end)
 	{
-		print_array(array, start, end);
+		print_arr(array, start, end);
 
 		mid = start + (end - start) / 2;
 		if (array[mid] == value)
